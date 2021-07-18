@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>Pure CSS Star Rating</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Peta&display=swap" rel="stylesheet">
+    <script defer src="dist/myscript.js"></script>
+
+</head>
+<body>
+    <audio src="Car.mp3" autoplay>
+        <p>If you are reading this, it is because your browser does not support the audio element.     </p>
+        </audio>
+    <div class="camero"><h1>CAMERO</h1></div>
+    <div class="camero1"><h2>Average Rating: <span id="responseAvg"></span></h2></div>
+    <div class="column">
+        <label for="name">Name:</label><br/>
+        <input id="name" type="text"/>
+        <br/>
+        <br/>
+        <label for="rating">Star Rating:</label>
+        <div class="rating">
+            <input type="radio" name="star" id="star5" value="5"><label for="star5">
+        </label>
+            <input type="radio" name="star" id="star4" value="4"><label for="star4">
+        </label>
+            <input type="radio" name="star" id="star3" value="3"><label for="star3">
+        </label>
+            <input type="radio" name="star" id="star2" value="2"><label for="star2">
+        </label>
+            <input type="radio" name="star" id="star1" value="1"><label for="star1">
+        </label>
+        </div>
+        </br>
+        <br/><label for="comment">Comment:</label><br/>
+        <textarea id="comment" name="comment" rows="4" cols="50" placeholder="Please enter your review here."></textarea><br/>
+        </br>
+        <p>Click on the "Submit" button to publish your review.</p>
+        <button id="submit"> Submit </button>
+    </div>
+<div class="about">
+    <h2>About the Product</h2>
+    <hr>
+    <h1>Beautiful</h1>
+    <h1>Elegant</h1>
+    <h1>Fast</h1>
+    <div class="row" id="response"></div>
+</div>
+<template id="responseTemplate">
+    <h3>From User: <span id="responseName"></span></h3>
+    <h4>Rating Given: <span id="responseRate"></span> Stars</h4>
+    <h4><span id="responseComment"></span></h4>
+    <h4>Date of Review: <span id="responseDate"></span></h4>
+    <hr>
+</template>
+</body>
+</html>

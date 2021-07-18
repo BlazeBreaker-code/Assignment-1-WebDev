@@ -1,0 +1,127 @@
+body
+{
+    margin: 0; 
+    padding: 0;
+    background: #000000;
+    background-image: url("https://i.pinimg.com/originals/45/25/35/45253597e5e09d5fdd18dcee756d7051.jpg");
+    background-repeat: no-repeat, repeat;
+}
+.rating
+{
+    position: absolute;
+    top: 25%;
+    left: 45%;
+    transform: translate(-50%, -50%) rotateY(180deg); 
+    display: flex;
+}
+.rating input
+{
+    display: none;
+}
+.rating label
+{
+    display: block;
+    cursor: pointer;
+    width: 50px;
+}
+.rating label:before
+{
+    content: '\f005';
+    font-family: fontAwesome;
+    position: relative; 
+    display: block;
+    font-size: 50px;
+    color: #101010;
+}
+.rating label:after
+{
+    content: '\f005';
+    font-family: fontAwesome;
+    position: absolute; 
+    display: block;
+    font-size: 50px;
+    color: #ffff66;
+    top: 0;
+    opacity: 0;
+    transition: .5s;
+    text-shadow: 0 2px 5px rgba(0,0,0,.5);
+
+}
+.rating label:hover:after,
+.rating label:hover ~ label:after,
+.rating input:checked ~ label:after
+{
+    opacity: 1;
+} 
+.column label
+{
+    color: aliceblue;
+}
+
+p
+{
+    color: rgb(190, 9, 48);
+    font-style: italic;
+}
+
+h2
+{
+    color:  #cc0000;
+    font-style: italic;
+    font-family: Snell Roundhand, cursive;
+    font-weight: 100;
+}
+
+h3, h4
+{
+    color: #b4b4b4;
+}
+
+.column
+{
+    padding-right: 500px;
+    position: absolute;
+    top: 30px;
+    right: 0;
+    width: 200px;
+    height: 300px;
+    border: 3px solid #000000;
+    background-color:  #b9b9b9d7;
+    background-image: url("https://cdn.hipwallpaper.com/i/3/77/c3uboZ.jpg");
+}
+
+.about {
+    position: absolute;
+    top: 500px;
+    left: 30px;
+
+}
+
+.about h1 {
+    color: white;
+    font-family: 'Brush Script Std, cursive';
+    font-style: oblique;
+    font-weight: 1px;
+}
+
+.camero h1 {
+    color:  #ffffff;
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    font-family: 'Lexend Peta', sans-serif;
+}
+
+.camero1 h2 {
+    color: #d1fa84;
+    font-family: 'Times New Roman', sans-serif;
+}
+
+.camero1 {
+    position: absolute;
+    top: 90px;
+    left: 60px;
+}
+
+/* Used this helpful video to figure out how to make the stars using CSS 
+https://www.youtube.com/watch?v=Ep78KjstQuw&ab_channel=OnlineTutorials */
